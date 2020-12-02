@@ -1,0 +1,363 @@
+<!--
+This document is a website development for A New Good Life Inc.
+This is the Homepage (index page)
+Assignment for CIS-1280
+Date: October 30, 2020
+Author: Thao Ho
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A New Good Life Inc. - We make your transportation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="row top-menu ">
+            <div class="col-md-4">
+                <a href="index.html">
+                    <img src="images/Logo/Logo2.png" class="right" alt="ANGLLogo">
+                </a>
+            </div>
+            <div class="col-md-8 nav-menu">
+                <ul class="nav justify-content-center nav-menu-item fixed-left">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" data-toggle="modal" data-target="#elegantModalForm"><i
+                                class="fas fa-sign-in-alt"></i> Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content form-elegant">
+                <!--Header-->
+                <div class="modal-header text-center">
+                    <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign
+                            in</strong></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body mx-4">
+                    <!--Body-->
+                    <div class="md-form mb-5">
+                        <input type="email" id="Form-email1" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                    </div>
+
+                    <div class="md-form pb-3">
+                        <input type="password" id="Form-pass1" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                        <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#"
+                                class="blue-text ml-1">
+                                Password?</a></p>
+                    </div>
+
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign
+                            in</button>
+                    </div>
+                    <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+                        with:</p>
+
+                    <div class="row my-3 d-flex justify-content-center">
+                        <!--Facebook-->
+                        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                                class="fab fa-facebook-f text-center"></i></button>
+                        <!--Twitter-->
+                        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                                class="fab fa-twitter"></i></button>
+                        <!--Google +-->
+                        <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i
+                                class="fab fa-google-plus-g"></i></button>
+                    </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer mx-5 pt-3 mb-1">
+                    <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#"
+                            class="blue-text ml-1">
+                            Sign Up</a></p>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <div class="backgoundContent">
+        <p class="backgoundContentTitle">Welcome To Transportation Industry</p>
+    </div>
+    <div id="baner">
+        <h1> <span class="text-success">Delivering Superior</span> Quality Service!</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-3 justify-content-center subBaner">
+                <svg width="3em" height="2em" viewBox="0 0 16 16" class="bi bi-truck" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                </svg>
+                <h4>LTL & TRUCKLOAD</h4>
+            </div>
+            <div class="col-md-3 justify-content-center subBaner">
+                <svg width="3em" height="2em" viewBox="0 0 16 16" class="bi bi-reply-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.079 11.9l4.568-3.281a.719.719 0 0 0 0-1.238L9.079 4.1A.716.716 0 0 0 8 4.719V6c-1.5 0-6 0-7 8 2.5-4.5 7-4 7-4v1.281c0 .56.606.898 1.079.62z" />
+                </svg>
+                <h4>COURIER SERVICE</h4>
+            </div>
+            <div class="col-md-3 justify-content-center subBaner">
+                <svg width="3em" height="2em" viewBox="0 0 16 16" class="bi bi-person-plus-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                </svg>
+                <h4>INTERMODAL SERVICE</h4>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3  justify-content-center subBaner">
+                <svg width="3em" height="2em" viewBox="0 0 16 16" class="bi bi-arrows-expand" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z" />
+                </svg>
+                <h4>CROSS BORDER SERVICE
+                </h4>
+            </div>
+            <div class="col-md-3  justify-content-center subBaner">
+                <svg width="3em" height="2em" viewBox="0 0 16 16" class="bi bi-archive-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z" />
+                </svg>
+                <h4>SEAFOOD - FRESH & FROZEN</h4>
+            </div>
+            <div class="col-md-3  justify-content-center subBaner">
+                <svg width="3em" height="2em" viewBox="0 0 16 16" class="bi bi-bezier2" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h1A1.5 1.5 0 0 1 5 2.5h4.134a1 1 0 1 1 0 1h-2.01c.18.18.34.381.484.605.638.992.892 2.354.892 3.895 0 1.993.257 3.092.713 3.7.356.476.895.721 1.787.784A1.5 1.5 0 0 1 12.5 11h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5H6.866a1 1 0 1 1 0-1h1.711a2.839 2.839 0 0 1-.165-.2C7.743 11.407 7.5 10.007 7.5 8c0-1.46-.246-2.597-.733-3.355-.39-.605-.952-1-1.767-1.112A1.5 1.5 0 0 1 3.5 5h-1A1.5 1.5 0 0 1 1 3.5v-1zM2.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10 10a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                </svg>
+                <h4>LOGISTICS & FREIGHT BROKERAGE</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="carouselWrap">
+        <h1>OUR SERVICE</h1>
+        <div id="carouselExampleIndicators" class="carousel slide my-3 " data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="customIndicators active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="customIndicators"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row mx-1">
+                        <div class="col-md-4 shahowBoxCarousel">
+                            <a href="https://www.midlandtransport.com/">
+                                <img class="d-block w-100"
+                                    src="images/caroulsel/104168477_2483795431842887_7425541470674787376_o.jpg"
+                                    alt="First slide">
+                            </a>
+                        </div>
+                        <div class="col-md-4 shahowBoxCarousel">
+                            <a href="https://www.midlandtransport.com/"><img class="d-block w-100"
+                                    src="images/caroulsel/119234645_2555389444683485_6272325138928665362_o.jpg"
+                                    alt="First slide"></a>
+                        </div>
+                        <div class="col-md-4 shahowBoxCarousel">
+                            <a href="https://www.midlandtransport.com/"><img class="d-block w-100"
+                                    src="images/caroulsel/82442776_2360499990839099_1902787824864722944_o.png"
+                                    alt="First slide"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row mx-1">
+                        <div class="col-md-4 shahowBoxCarousel">
+                            <a href="https://www.midlandtransport.com/"><img class="d-block w-100"
+                                    src="images/caroulsel/116435380_2517357575153339_303100945680578965_o.jpg"
+                                    alt="First slide"></a>
+                        </div>
+                        <div class="col-md-4 shahowBoxCarousel">
+                            <a href="https://www.midlandtransport.com/"><img class="d-block w-100"
+                                    src="images/caroulsel/120087279_2565207053701724_4678788361533533339_o.jpg"
+                                    alt="First slide"></a>
+                        </div>
+                        <div class="col-md-4 shahowBoxCarousel">
+                            <a href="https://www.midlandtransport.com/"><img class="d-block w-100"
+                                    src="images/caroulsel/118044208_2534577066764723_407564200298138104_o.jpg"
+                                    alt="First slide"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <div class="p-2 customArrow">
+                    <span class="carousel-control-prev-icon customArrowIcon" aria-hidden="true"></span>
+                </div>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <div class="p-2 customArrow">
+                    <span class="carousel-control-next-icon customArrowIcon" aria-hidden="true"></span>
+                </div>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <h1 class="text-center text-success">Detail Service</h1>
+        <thead>
+            <tr>
+                <th>LTL & TRUCKLOAD</th>
+                <th>COURIER SERVICE</th>
+                <th>SEAFOOD - FRESH & FROZEN</th>
+                <th>LOGISTICS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dry and temperature sensitive LTL and TL services within and between Ontario, Québec, and
+                    Atlantic Canada as well as U.S. services.</td>
+                <td>Whether by air or ground, Midland Courier is the choice for fast and reliable shipping of your
+                    smaller sized shipments. Next day delivery options available.</td>
+                <td>Refrigerated seafood transportation services specifically designed to meet the needs of the
+                    fishing and aquaculture industries.</td>
+                <td>Use our extensive knowledge of all transportation industry modes and trusted network of partners
+                    to move your freight globally.</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row mx-2">
+                <div class="col-md-4">
+                    <h5 class="text-uppercase text-light">ABOUT US - HISTORY</h5>
+                    <p class="text-light">How did we get to where we are today? Superior Quality Service. SQS is the
+                        strategy we live by, and a testament to how we work - day in, day out. SQS is about making a
+                        positive impact with our customers, and every person within our organization, no matter
+                        the role, plays a huge part.</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase text-light">Menu</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Services</a>
+                        </li>
+                        <li>
+                            <a href="#!">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#!">About</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-uppercase text-light">Menu</h5>
+
+                    <ul class="list-unstyled text-light">
+                        <li>
+                            Email: jamesB@anewgoodlife.ca
+                            Phone: (902) 123-4567
+                        </li>
+                        <li>
+                            Address:
+                            A New Goodlife Inc.
+                            240 Mason Road
+                            Startford, PE
+                            C1B 2E9
+                            Canada
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-3 center-block">
+                    <h5 class="text-uppercase text-light ">Social</h5>
+
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="https://www.facebook.com/midlandtransportlimited/">
+                                <i class="fab fa-2x fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/midland-transport">
+                                <i class="fab fa-2x fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/midland.transport/">
+                                <i class="fab fa-2x fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCx_361T9142airmkwVHPMXw">
+                                <i class="fab fa-2x fa-youtube-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-light ">© 2020 Copyright:
+            <a href="https://www.midlandtransport.com/"> A New Good Life 2020.</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/9caa479d64.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

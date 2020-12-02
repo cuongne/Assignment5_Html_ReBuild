@@ -1,0 +1,276 @@
+/*
+
+This document is a website development for A New Good Life Inc.
+This is the css styles using for the entire website
+Assignment for CIS-1280
+Date: October 30, 2020
+Author: Thao Ho
+
+*/
+
+body {
+    overflow-x: hidden;
+}
+/* #region  nav-menu */
+a{
+    color: #4feebe;
+}
+.top-menu {
+    background-image: url("/images/background/background.jpg") ;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.top-menu>* {
+    position: absolute;
+    z-index: 3;
+}
+
+.top-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 1;
+    opacity: 0.35;
+}
+
+.nav-menu {
+    margin-top: 20px;
+}
+
+.backGound {
+    background-color: #6b6b6b8a;
+}
+
+.nav-menu .nav-menu-item {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.nav-menu .nav-menu-item li {
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.nav-menu .nav-menu-item li a {
+    color: #ffffff;
+    transition: color 0.5s;
+}
+
+.nav-menu .nav-menu-item li a:hover {
+    color: #fdd4c1;
+}
+
+/* #endregion */
+
+/* #region backgoundContent */
+
+.backgoundContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.backgoundContent .backgoundContentTitle {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 800;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    text-align: center;
+}
+
+/* #endregion */
+
+/* #region  baner */
+
+#baner {
+    margin: 20px auto;
+    width: 100%;
+}
+
+#baner h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#baner .subBaner {
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px rgba(201, 200, 200, 0.56);
+    background-color: #f7f3f3c7;
+    margin: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    transition: all .5s;
+    animation: left 1s;
+}
+
+@keyframes left {
+    from {
+        transform: translateX(-500%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+#baner .subBaner:hover {
+    transform: translateY(-0.6em);
+    box-shadow: 8px 8px 16px rgba(67, 55, 55, 0.56);
+}
+
+#baner .subBaner svg {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* #endregion */
+
+/* #region customArrow*/
+
+.carouselWrap {
+    background-color: rgba(216, 216, 216, 0.568);
+    padding: 20px 0 80px 0;
+}
+
+.carouselWrap h1 {
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+.customArrow {
+    background-color: rgba(2, 18, 34, 0.863);
+    padding: 0;
+    border-radius: 40px;
+}
+
+.carousel-indicators li {
+    border-radius: 100%;
+}
+
+.customArrow .customArrowIcon {
+    margin-top: 5px;
+}
+
+.customIndicators {
+    padding: 12px 0;
+}
+
+/* #endregion*/
+
+.table {
+    background-color: rgba(255, 228, 196, 0.185);
+    margin-top: 50px;
+    margin-bottom: 0 !important;
+}
+
+img.left {
+    margin-bottom: 10px;
+    max-width: 50%;
+    padding: 5px;
+    height: auto;
+}
+
+img.right {
+    /* margin-left: 10px; */
+    max-width: 80%;
+    height: auto;
+}
+
+img.center {
+    max-width: 15%;
+    height: auto;
+    border: 5px solid blueviolet;
+}
+
+
+
+.wonkaText {
+    color: darkgreen;
+}
+
+.purpleBorder {
+    border: 2px solid rebeccapurple;
+}
+
+.page-footer {
+    background-color: #343A40;
+}
+footer a{
+ color:#4feebe ;
+}
+.center-block li {
+    margin-right: 10px;
+}
+
+/* service page */
+
+.fullBackground {
+    background-image:url("/images/undraw_Operating_system_re_iqsc.svg");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
+.fullBackground .contentPage{
+    padding-top: 120px;
+}
+.servicesContainer{
+
+}
+.servicesContainer img{
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px rgba(63, 63, 63, 0.884);
+
+}
+.servicesContainer .singleImage {
+    
+ }
+.servicesContainer .duplicateImages {
+   padding-bottom: -5px;
+}
+.servicesContainer .duplicateImages img{
+
+    margin-bottom: 5px;
+}
+.descriptionServices{
+
+}
+.descriptionServices ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.descriptionServices ul li{
+    text-align: justify;
+}
+.form-elegant .font-small {
+    font-size: 0.8rem; }
+
+.form-elegant .z-depth-1a {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+    box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25); }
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); }
+
+.form-elegant .modal-header {
+    border-bottom: none; }
+
+.modal-dialog .form-elegant .btn .fab {
+    color: #2196f3!important; }
+
+.form-elegant .modal-body, .form-elegant .modal-footer {
+    font-weight: 400; }

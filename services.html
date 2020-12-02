@@ -1,0 +1,267 @@
+<!--
+This document is a website development for A New Good Life Inc.
+This is the Homepage (index page)
+Assignment for CIS-1280
+Date: October 30, 2020
+Author: Thao Ho
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A New Good Life Inc. - We make your transportation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="row backGound">
+            <div class="col-md-4">
+                <a href="index.html">
+                    <img src="images/Logo/Logo2.png" class="right" alt="ANGLLogo">
+                </a>
+            </div>
+            <div class="col-md-8 nav-menu ">
+                <ul class="nav justify-content-center nav-menu-item fixed-left">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" data-toggle="modal" data-target="#elegantModalForm"><i
+                                class="fas fa-sign-in-alt"></i> Login</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content form-elegant">
+                <!--Header-->
+                <div class="modal-header text-center">
+                    <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign
+                            in</strong></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body mx-4">
+                    <!--Body-->
+                    <div class="md-form mb-5">
+                        <input type="email" id="Form-email1" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                    </div>
+
+                    <div class="md-form pb-3">
+                        <input type="password" id="Form-pass1" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                        <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#"
+                                class="blue-text ml-1">
+                                Password?</a></p>
+                    </div>
+
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign
+                            in</button>
+                    </div>
+                    <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+                        with:</p>
+
+                    <div class="row my-3 d-flex justify-content-center">
+                        <!--Facebook-->
+                        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                                class="fab fa-facebook-f text-center"></i></button>
+                        <!--Twitter-->
+                        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                                class="fab fa-twitter"></i></button>
+                        <!--Google +-->
+                        <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i
+                                class="fab fa-google-plus-g"></i></button>
+                    </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer mx-5 pt-3 mb-1">
+                    <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#"
+                            class="blue-text ml-1">
+                            Sign Up</a></p>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <div class="fullBackground text-center">
+        <div class="contentPage">
+            <h1>Service</h1>
+            <p>
+                <a href="">Home</a>
+                / Service
+            </p>
+        </div>
+    </div>
+
+    <div class="container servicesContainer">
+        <h1 class="text-center">MIDLAND TRANSPORT LIMITED</h1>
+        <div class="row justify-content-center py-1 pl-2">
+            <div class="col-md-6 singleImage">
+                <img class="d-block w-100" src="images/caroulsel/Resized.png" alt="">
+            </div>
+            <div class="col-md-6 duplicateImages">
+                <img class="d-block w-75" src="images/caroulsel/Service Disruptions_EN.jpg" alt="">
+                <img class="d-block w-75" src="images/caroulsel/Careers-Careers-With-Midland-Header.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container descriptionServices">
+        <div class="">
+            <ul>
+                <li>Midland Transport Limited provides a complete range of transportation and
+                    distribution services, specializing in Ontario, Quebec, Atlantic Canada and the U.S.
+                    More importantly, we provide solutions that help our customers' businesses. Flexible and innovative,
+                    we work with our customers as partners for effective and efficient distribution of their product.
+                </li>
+                <li>
+                    <a href="#" class="text-success">LTL & TRUCKLOAD</a>
+                    <p>Dry and temperature sensitive LTL and TL services within and between Ontario, Québec, and Atlantic Canada as well as U.S. services.</p>
+                </li>
+                <li>
+                    <a href="#" class="text-success">COURIER SERVICE</a>
+                    <p>Whether by air or ground, Midland Courier is the choice for fast and reliable shipping of your smaller sized shipments. Next day delivery options available.</p>
+                </li>
+                <li>
+                    <a href="#" class="text-success">INTERMODAL SERVICE</a>
+                    <p>An economical, intermodal service for when you can live with longer transit times.</p>
+                </li>
+                <li>
+                    <a href="#" class="text-success">CROSS BORDER SERVICE</a>
+                    <p>Fully integrated warehousing, transportation, and distribution options for your fresh and frozen food products within and between Ontario, Quebec and Atlantic Canada.</p>
+                </li>
+                <li>
+                    <a href="#" class="text-success">SEAFOOD - FRESH & FROZEN</a>
+                    <p>Refrigerated seafood transportation services specifically designed to meet the needs of the fishing and aquaculture industries.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Section: Contact v.2-->
+<!--Section: Contact v.2-->
+    <footer class="page-footer font-small blue pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row mx-2">
+                <div class="col-md-4">
+                    <h5 class="text-uppercase text-light">ABOUT US - HISTORY</h5>
+                    <p class="text-light">How did we get to where we are today? Superior Quality Service. SQS is the
+                        strategy we live by, and a testament to how we work - day in, day out. SQS is about making a
+                        positive impact with our customers, and every person within our organization, no matter
+                        the role, plays a huge part.</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase text-light">Menu</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Services</a>
+                        </li>
+                        <li>
+                            <a href="#!">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#!">About</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-uppercase text-light">Menu</h5>
+
+                    <ul class="list-unstyled text-light">
+                        <li>
+                            Email: jamesB@anewgoodlife.ca
+                            Phone: (902) 123-4567
+                        </li>
+                        <li>
+                            Address:
+                            A New Goodlife Inc.
+                            240 Mason Road
+                            Startford, PE
+                            C1B 2E9
+                            Canada
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-3 center-block">
+                    <h5 class="text-uppercase text-light ">Social</h5>
+
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="https://www.facebook.com/midlandtransportlimited/">
+                                <i class="fab fa-2x fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/midland-transport">
+                                <i class="fab fa-2x fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/midland.transport/">
+                                <i class="fab fa-2x fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCx_361T9142airmkwVHPMXw">
+                                <i class="fab fa-2x fa-youtube-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-light ">© 2020 Copyright:
+            <a href="https://www.midlandtransport.com/"> A New Good Life 2020.</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/9caa479d64.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
